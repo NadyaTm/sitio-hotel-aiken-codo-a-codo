@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Aiken. Hotel y Spa</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="logo-aiken-favicon.png">
+    <meta name="hotel-spa-aiken" content="Aiken hotel y spa">
+    <!--link href="https://fonts.googleapis.com/css?family=Sarasa:300,400,600,700" rel="stylesheet"-->
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <!--<link rel="stylesheet" href="css/normaliza.css"-->
+
+     <!--Slider-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+</head>
+<body>
+  <div class="navbar"> <!--NAVBAR-->
+    <div class="container flex">
+      <div class="logo"> <!-- imagen logo-->                
+        <a href="../index.html">
+          <img src="../img/logo/logo-negro-fondo-transparente-aiken.png" alt="Aiken hotel y spa" title="Aiken hotel patagónico" height="80px" class="logo"> 
+        </a> 
+        <h1 class="nav-brand-redes">AIKEN Hotel y Spa</h1>             
+       
+      <div class="redes"> <!-- redes sociales -->
+        <a href="https://www.facebook.com" target="_blank"><img src="../img/iconos/25x25px-fb.png" alt="redes-sociales"></a>
+        <a href="https://www.instagram.com/nadya.tome.ph/"><img src="../img/iconos/25x25px-ig.png" alt="redes-sociales-ig"></a>
+        <a href="https://www.google.com/intl/es/gmail/about/#" target="_blank"><img src="../img/iconos/25x25px-gmail.png" alt="correo-electronico"></a>
+        <a href="https://api.whatsapp.com/send?phone=542616008640&text=Quisiera%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre..."><img src="../img/iconos/25x25px-wapp.png" alt="redes-sociales"></a>
+      </div>
+    </div>
+                 
+      <nav><!-- barra de menú flotante-->                   
+        <ul class="menu" id="menu"><!-- menú de navegación--> 
+          <li><a href="../pages/habitaciones.html">Habitaciones</a></li>
+          <li><a href="../pages/galeria.html">Galería</a></li>
+          <li><a href="../pages/check in.html">Check in</a></li>
+          <li><a href="../pages/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>    
+    </div>    
+  </div> 
+
+    <header>  
+        <form action="">
+            <fieldset>
+            <legend>Reservas</legend>
+            <input type="date" name="check in"> 
+            <input type="date" name="check out">
+            <br><br>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Adultos</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>  
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Niños</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select> 
+            <br><br>
+            <label for="habitacion">Seleccionar Habitación:</label>
+            <select name="habitacion" id="habitacion" size="3">
+                <option value="1">Simple</option>
+                <option value="2">Doble</option>
+                <option value="3">Triple</option>             
+            </select>
+            <label for="cantidad habitacion">Cantidad de habitaciones:</label>
+            <select class="form-select" aria-label="Default select example">                
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>  
+            </fieldset>
+            
+            <br><br>
+
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <form class="row g-3">
+                    <div class="col-md-4">
+                      <label for="validationDefault01" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="validationDefault01" required>
+                    </div>
+                    <br>
+                    <div class="col-md-4">
+                      <label for="validationDefault02" class="form-label">Apellido</label>
+                      <input type="text" class="form-control" id="validationDefault02" required>
+                    </div>
+                    <br>
+                    <div class="col-md-4">
+                        <label for="validationDefault02" class="form-label">eMail</label>
+                        <input type="text" class="form-control" id="validationDefault02"required>
+                      </div>                    
+                    </div>
+                    <br>
+                    <div class="col-md-6">
+                        <label for="validationDefault03" class="form-label">Dirección</label>
+                        <input type="text" class="form-control" id="validationDefault03" required>
+                      </div>
+                      <br>
+                    <div class="col-md-6">
+                      <label for="validationDefault03" class="form-label">Provincia</label>
+                      <input type="text" class="form-control" id="validationDefault03" required>
+                    </div>
+                    <br>
+                    <div class="col-md-6">
+                        <label for="validationDefault03" class="form-label">Ciudad</label>
+                        <input type="text" class="form-control" id="validationDefault03" required>
+                      </div>
+                      <br>                   
+                    <div class="col-md-3">
+                      <label for="validationDefault05" class="form-label">Código Postal</label>
+                      <input type="text" class="form-control" id="validationDefault05" required>
+                    </div>
+                    <br>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                        <label class="form-check-label" for="invalidCheck2">
+                          Acepto términos y condiciones
+                        </label>
+                      </div>
+                    </div>
+                </fieldset>
+
+                <br><br>
+                
+                    <div class="col-12">
+                      <button class="btn btn-primary" type="submit">Reservar</button>
+                    </div>                  
+        </form>
+
+        <br><br>
+               
+      </header>
+      
+      <footer class="grid-footer">  <!--FOOTER-->
+    
+        <div class="footer-flex">
+          <div class="redes"> <!-- redes sociales -->
+            <a href="https://www.facebook.com" target="_blank"><img src="../img/iconos/25x25px-fb.png" alt="redes-sociales"></a>
+            <a href="https://www.instagram.com/nadya.tome.ph/"><img src="../img/iconos/25x25px-ig.png" alt="redes-sociales-ig"></a>
+            <a href="https://www.google.com/intl/es/gmail/about/#" target="_blank"><img src="../img/iconos/25x25px-gmail.png" alt="correo-electronico"></a>
+            <a href="https://api.whatsapp.com/send?phone=542616008640&text=Quisiera%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre..."><img src="../img/iconos/25x25px-wapp.png" alt="redes-sociales"></a>
+          </div>
+          <div class="footer-text">   
+            <p>Av. Exequiel Bustillo 1349, San Carlos de Bariloche, Río Negro. Argentina</p>
+          </div> 
+          <div>
+            <img src="../img/logo/logo-blanco-fondo-negro-aiken.png" alt="logo-hotelyspa-aiken" class="footer-logo">
+          </div>                   
+        </div>
+       
+      </footer>
+        
+
+</body>
+</html>

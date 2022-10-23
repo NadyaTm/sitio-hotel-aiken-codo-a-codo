@@ -1,0 +1,419 @@
+/*Estilos globales*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;  
+}
+body {
+    font-family: 'Cormorant', serif;
+    background: rgb(255, 253, 229);   
+}
+
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 15px 0;
+    line-height: 1.2;
+}
+
+
+li{
+    list-style-type: none;
+}
+
+/*Grid Contenedor*/
+
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    overflow: visible;
+
+/*agregadas domingo*/
+    /*grid-template-rows: 100%;*/
+    row-gap:  1em;
+    column-gap: 1em;
+    width: 1200px;
+    height: auto;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+   
+}
+
+/*Nav y Barra de menú*/
+.navbar{
+    background-color:rgb(133, 168, 116);
+    height: 90px;
+    padding: 0 30px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+   gap: 1em;
+}
+.nav-brand-redes{
+    color: white;
+}
+.navbar ul{
+    display: flex;
+}
+.menu a {
+    font-family: roboto;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    margin: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.menu a:hover{
+    color: rgb(68, 109, 48);
+    border-bottom: 2px solid white;
+}
+
+/*Estilos del Header*/
+
+.header-contenido{
+    display: grid;
+    grid-column: 1/13;
+    align-content: center;
+    
+}
+.container-grid-viedo{
+    margin: 0;
+    width: 25vw;    
+    /*height: 100vh;*/ 
+    position: relative;
+    object-fit: cover;
+    max-width: 100%;
+    
+}
+.container-video-flex {
+   display: flex;
+   justify-content: center ;
+   align-items: center;
+   margin-bottom: 25px;
+}
+
+.header-absolute{
+    position: absolute;
+    /*border:red solid;*/
+    width: 1179px;
+    bottom: 35px;
+    height: 250px;
+    
+    
+}
+.header-text-form{
+    display: flex;
+    flex-direction: row;
+    
+   
+}
+.port-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 15em;
+    
+    
+}
+.port-text{
+     
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+    .port-text h3{
+        color: white;
+        font-size: 2em;
+        font-weight: bold;
+
+    }
+.port-form{
+    color: white;
+    width: 180px;
+    display: flex;
+    align-items: flex-end;
+    
+}
+    .btn-form{
+        background-color: rgba(250, 251, 249, 0.223);
+        border:rgb(133, 168, 116) solid 1px; 
+        color: rgb(255, 255, 255);
+        padding: 15px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        height: fit-content;
+    }
+
+
+/*Estilos "Sección artículos"*/
+
+.section-1{
+    display: grid;
+    grid-column: 1/13;
+    max-width: 100%;
+      
+   
+}
+
+.card1{
+    grid-column: 1/5;
+    max-width: 100%;
+    height: auto;
+    
+
+}
+.card2{
+   grid-column: 5/9;
+   max-width: 100%;   
+}
+.card3{
+    grid-column: 9/13;
+    max-width: 100%;   
+}
+.card-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 25px;
+}
+    div .img-section{
+       
+        max-width: 100%;
+        
+    }
+    .text-section{
+        font-family: roboto;
+        font-weight: bold;
+        color: black     
+    }
+        .btn{            
+                background-color: rgb(133, 168, 116); 
+                color: rgb(255, 255, 255);
+                padding: 15px 32px;
+                margin: 5px 0px 10px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 1em;              
+        }
+
+/*Estilos Slider(carrusel)"*/
+
+.section-2{
+    display: grid;   
+    max-width: 100%;
+          
+       
+}
+.section-carrusel{
+    grid-column: 1/13;
+}
+
+
+/*Estilos del Footer*/
+
+/*
+grid-footer
+grid-footer-content
+footer-content-flex
+flex*/
+
+
+.grid-footer{
+    display: grid;
+    grid-column: 1/13;
+    grid-row: 5/6;
+    background-color: rgb(5, 5, 5);
+}
+
+.footer-content-flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    height: 100%;
+    
+
+}
+
+.footer-flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+    .grid-footer-content{
+        display: grid;
+        grid-column: 1/13;
+    }
+    .redes{
+        display: flex;
+        justify-content: space-between;
+        column-gap:5px;
+       
+    }
+
+    .footer-logo{
+        width: 80px;
+    }
+    .footer-text{
+        color: antiquewhite;
+    }
+
+
+/*ESTILOS DE PÁGINAS INTERNAS*/
+
+/*Habitaciones*/
+
+.card-flex-gallery-rooms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 25px;
+    height: fit-content;
+}
+
+.card-flex-gallery-rooms h2,
+p{
+    padding: 25px 25px;
+    color: rgb(76, 113, 73);
+    
+}
+
+.card-flex-gallery-rooms img{
+    margin-bottom: 25px;
+}
+
+.text-btn-rooms{
+    display: flex;
+    height: fit-content;
+}
+/*Contacto*/
+.card1-contact{
+    grid-column: 1/7;
+    max-width: 100%;
+    height: auto;     
+
+}
+.card2-form{
+   display: grid; 
+   grid-column: 7/13;
+   max-width: 100%;   
+}
+    .card1-contact, .card2-form p, h3, h5{
+        font-size: larger;
+        color:rgb(38, 74, 35);
+        padding: 25px 0px 25px 0px;
+    }
+.grid-map{
+    display: grid;
+    grid-column: 1/13;
+    max-width: 100%;
+    height: auto;
+}
+
+/*Galería*/
+.header-galeria{
+    display: grid;
+    max-width: 100%;
+}
+.header-carrusel{
+    grid-column: 1/13;
+}
+   
+
+    .title-galery{
+        display: grid;
+        grid-column: 1/5;
+        max-width: 100%;
+        height: auto;
+        padding-top: 25px;
+        
+    
+    }
+
+    .card-flex-gallery{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        padding-bottom: 25px;
+    }
+
+        .card-flex-gallery img:hover{
+    
+            -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+            background-color: powderblue;
+            transition: background-color .5s;
+            border: rgba(38, 74, 35, 0.676) solid 5px;
+            border-radius: 4px;
+    
+
+        }
+
+
+
+
+/*Estilos especificos del sitio*/
+/*MODIFICACIÓN Slider Carrusel*/
+
+.h5-carousel{
+    color:rgb(225, 219, 219);
+    font-size: 2em;
+    font-weight: bolder;
+}
+.p-carousel{
+    color: rgb(225, 219, 219);
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+
+
+
+/*<!--relax y spa, gimnasio, gastronomia, -->
+    <div class="row">
+        <div>
+            <img src="../img/spa/Spa2.jpg">
+            <img src="../img/gastronomía/spa-maqueta.png">
+            <h2>Relax y Spa</h2>
+        </div>
+        <div>
+            <img src="../img/gym/Gym3.jpg">
+            <img src="../img/gastronomía/gym-maqueta.png">
+            <h2>Gimnasio</h2>
+        </div>
+        <div>
+            <img src="../img/gastronomía/gastronomia-maqueta.png">
+            <img src="../img/gastronomía/Gastronomia2.jpg">
+            <h2>Gastronomía</h2>
+        </div>
+    </div>*/
+
+
+
+
+
