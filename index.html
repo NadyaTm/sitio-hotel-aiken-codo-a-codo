@@ -14,69 +14,53 @@
   <link rel="stylesheet" href="css/mediaQueries.css"> 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"> 
   <!--Iconos FontAwesome-->
-  
+  <script src="https://kit.fontawesome.com/7e89ccde1e.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
-    <div class="navbar"> <!--NAVBAR-->
-      <div class="container flex">
-        <div class="logo"> <!-- imagen logo-->                
-          <a href="index.html">
-            <img src="img/logo/logo-negro-fondo-transparente-aiken.png" alt="Aiken hotel y spa" title="Aiken hotel patagónico" height="80px" class="logo"> 
-          </a> 
-          <h1 class="nav-brand-redes">AIKEN Hotel y Spa</h1>             
-         
-        <div class="redes"> <!-- redes sociales -->
-          <a href="https://www.facebook.com" target="_blank"><img src="img/iconos/25x25px-fb.png" alt="redes-sociales"></a>
-          <a href="https://www.instagram.com/nadya.tome.ph/"><img src="img/iconos/25x25px-ig.png" alt="redes-sociales-ig"></a>
-          <a href="https://www.google.com/intl/es/gmail/about/#" target="_blank"><img src="img/iconos/25x25px-gmail.png" alt="correo-electronico"></a>
-          <a href="https://api.whatsapp.com/send?phone=542616008640&text=Quisiera%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre..."><img src="img/iconos/25x25px-wapp.png" alt="redes-sociales"></a>
-        </div>
-      </div>
-                   
-        <nav><!-- barra de menú flotante-->                   
-          <ul class="menu" id="menu"><!-- menú de navegación--> 
-            <li><a href="pages/habitaciones.html">Habitaciones</a></li>
-            <li><a href="pages/galeria.html">Galería</a></li>
-            <li><a href="pages/check in.html">Check in</a></li>
-            <li><a href="pages/contacto.html">Contacto</a></li>
-          </ul>
-        </nav>    
-      </div>    
-    </div> 
-    <header>
-    
-      <div class="container-video-flex">
-      <video  autoplay  muted >
-        <source src="video/montañas-paisaje.mp4" type="video/mp4">
-      </video> 
-    
-  </div>
-    <div class="container"> <!--HEADER-->
-      <div class="header-contenido header-absolute">
 
-        
-        
-        <div >
-          <div class="header-text-form">
-            <div class="port-grid">
-              <div class="port-text"><!--texto-->          
-                <h3 class="text-header-index">Experimentá la atmósfera única de relajación, belleza natural y lujo sustentable del spa del hotel Aiken es como viajar a otro mundo. Este paraíso patagónico ofrece a los huéspedes una vista impresionante de las montañas y el lago Nahuel Huapi, todo mientras disfrutás de tratamientos de spa y de nuestro hotel.</h3>
-              </div> 
-              <div class="port-form btn-form"> <!--Formulario-->
-                <form class="form">
-                  <input type="text" name="nombre-apellido" placeholder="Nombre y Apellido" required>
-                  <input type="text" name="email" placeholder="tuemail@email.com" required>
-                  <input type="date" name="check in"> 
-                  <input type="date" name="check out"> 
-                  <button type="submit" value="reservar" class="button btn">Reservar</button>
-                </form>
-              </div>
-            </div>
-          </div>
+    <header>
+      <div class="navbar"> <!--NAVBAR-->
+        <div class="container flex">
+          <div class="logo"> <!-- imagen logo-->                
+            <a href="index.html">
+              <img src="img/logo/logo-negro-fondo-transparente-aiken.png" alt="Aiken hotel y spa" title="Aiken hotel patagónico" height="80px" class="logo"> 
+            </a> 
+            <h1 class="nav-brand-redes">AIKEN Hotel y Spa</h1>
+          </div>          
+          <div class="redes"> <!-- redes sociales -->
+            <a href="https://www.facebook.com" target="_blank"><img src="img/iconos/25x25px-fb.png" alt="redes-sociales"></a>
+            <a href="https://www.instagram.com/nadya.tome.ph/"><img src="img/iconos/25x25px-ig.png" alt="redes-sociales-ig"></a>
+            <a href="https://www.google.com/intl/es/gmail/about/#" target="_blank"><img src="img/iconos/25x25px-gmail.png" alt="correo-electronico"></a>
+            <a href="https://api.whatsapp.com/send?phone=542616008640&text=Quisiera%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre..."><img src="img/iconos/25x25px-wapp.png" alt="redes-sociales"></a>
+          </div>      
+          <nav><!-- barra de menú flotante-->                   
+            <ul class="menu" id="menu"><!-- menú de navegación--> 
+              <li><a href="pages/habitaciones.html">Habitaciones</a></li>
+              <li><a href="pages/galeria.html">Galería</a></li>
+              <li><a href="pages/check in.html">Check in</a></li>
+              <li><a href="pages/contacto.html">Contacto</a></li>
+            </ul>
+          </nav>  
+          <div class="menu-responsive">
+            <i class="fa-solid fa-bars"></i>
+          </div>   
         </div>
+      </div> 
+
+      <div class="header-contenido"> <!-- Contenido del header-->
+        
+          <div class="video">
+            <video  autoplay  muted >
+              <source src="video/montañas-paisaje.mp4" type="video/mp4">
+            </video>
+          </div>     
+          
+        <div class="port-text"><!--texto-->          
+          <h3 class="text-header-index">Experimentá la atmósfera única de relajación, belleza natural y lujo sustentable del spa del hotel Aiken es como viajar a otro mundo. Este paraíso patagónico ofrece a los huéspedes una vista impresionante de las montañas y el lago Nahuel Huapi, todo mientras disfrutás de tratamientos de spa y de nuestro hotel.</h3>
+          <h3 class="text-responsive">Experimentá la atmósfera única de relajación, belleza natural del hotel Aiken </h3>
+        </div>             
       </div>
-    </div>
     </header>
 
     <main>       
@@ -166,10 +150,8 @@
 
     
     <!--SCRIPTS-->
-    <!--Script Menù Hamburguesa-->
-    <script src="js/script.js"></script>
     <!--Script SLIDER CARRUSEL --><!-- JavaScript Bundle with Popper --> 
-    <script src="js/index.js"></script>    
+    <script src="js/script.js"></script>    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
   </body>

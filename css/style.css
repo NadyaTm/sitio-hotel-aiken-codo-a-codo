@@ -32,9 +32,6 @@ li{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     overflow: visible;
-
-/*agregadas domingo*/
-    /*grid-template-rows: 100%;*/
     row-gap:  1em;
     column-gap: 1em;
     width: 1200px;
@@ -86,45 +83,58 @@ li{
     border-bottom: 2px solid white;
 }
 
+.menu-responsive{
+    display: none;
+}
+
+
 /*Estilos del Header*/
 
 .header-contenido{
-    display: grid;
-    grid-column: 1/13;
+    display: flex;
     align-content: center;
     
 }
-.container-grid-viedo{
+
+
+
+
+
+/*.container-grid-viedo{
     margin: 0;
-    width: 25vw;    
-    /*height: 100vh;*/ 
-    position: relative;
+    width: 25vw;
     object-fit: cover;
     max-width: 100%;
     
-}
-.container-video-flex {
+}                               /* revisar y borrar*/
+/*.container-video-flex {
    display: flex;
    justify-content: center ;
    align-items: center;
    margin-bottom: 25px;
+}*/ 
+
+
+
+
+.video{
+    overflow: hidden;
 }
 
-.header-absolute{
+/*.header-absolute{
     position: absolute;
-    /*border:red solid;*/
     width: 1179px;
     bottom: 35px;
     height: 250px;
     
     
-}
-.header-text-form{
+}*/
+/*.header-text-form{
     display: flex;
     flex-direction: row;
     
    
-}
+}*/
 .port-grid{
     display: flex;
     flex-direction: row;
@@ -139,6 +149,10 @@ li{
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
+   position: absolute;
+   top: 50%;
+   right: 50%;
+   left: 45px;px;
 }
     .port-text h3{
         color: white;
@@ -146,13 +160,28 @@ li{
         font-weight: bold;
 
     }
-.port-form{
-    color: white;
-    width: 180px;
+
+    .text-responsive{
+        display: none;
+    }
+    .text-header-index{
+        position: relative;
+    }
+.port-form{    
     display: flex;
     align-items: flex-end;
+    width: 100%;
+    max-width: 200px;
+    margin: 5px;
+    padding: 5px;
+    border: rgb(133, 168, 116) solid 1px;
+    color: white;
+    height: fit-content;
     
 }
+    .form_grupo{
+        height: auto;
+    }
     .btn-form{
         background-color: rgba(250, 251, 249, 0.223);
         border:rgb(133, 168, 116) solid 1px; 
@@ -305,10 +334,10 @@ p{
     margin-bottom: 25px;
 }
 
-.text-btn-rooms{
+/*.text-btn-rooms{
     display: flex;
     height: fit-content;
-}
+}*/ /*ver si está clase estaba aplicada a alguna otra etiqueta*/
 /*Contacto*/
 .card1-contact{
     grid-column: 1/7;
