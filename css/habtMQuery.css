@@ -1,0 +1,37 @@
+/* Habitaciones  */
+
+@media screen and (max-width: 480px){
+    .container{
+        display:inline-block ;
+        margin: 0 auto;
+        width: 480px; 
+        overflow: visible;
+        row-gap:  1em;
+        column-gap: 1em;
+        padding-left: 15px;
+        padding-right: 15px;      
+        
+    }
+
+    
+}
+
+
+@media all and (min-width: 750px){
+    .container{
+        display:inline-block ;
+        margin: 0 auto;
+        min-width: 750px;
+        overflow: visible;
+        row-gap:  1em;
+        column-gap: 1em;
+        padding-left: 15px;
+        padding-right: 15px;      
+        
+    }
+    /*.navbar ul{
+        display: inline;
+    }*/
+}
+
+

@@ -28,13 +28,12 @@ li{
 
 .container{
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     overflow: visible;
     row-gap:  1em;
     column-gap: 1em;
-    width: 1200px;
     height: auto;
     position: relative;
     padding-left: 15px;
@@ -43,27 +42,34 @@ li{
 }
 
 /*Nav y Barra de menú*/
-.navbar{
+.navbarra{
     background-color:rgb(133, 168, 116);
-    height: 90px;
+    height: 100%;
     padding: 0 30px;
+    
+ 
 }
 
 .flex{
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    flex-direction: row;
+    
+
 }
 .logo{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-   gap: 1em;
+    gap: 1em;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 .nav-brand-redes{
     color: white;
+   
 }
 .navbar ul{
     display: flex;
@@ -91,29 +97,9 @@ li{
 /*Estilos del Header*/
 
 .header-contenido{
-    display: flex;
-    align-content: center;
-    
+    display: flex;    
+    justify-content: center;
 }
-
-
-
-
-
-/*.container-grid-viedo{
-    margin: 0;
-    width: 25vw;
-    object-fit: cover;
-    max-width: 100%;
-    
-}                               /* revisar y borrar*/
-/*.container-video-flex {
-   display: flex;
-   justify-content: center ;
-   align-items: center;
-   margin-bottom: 25px;
-}*/ 
-
 
 
 
@@ -121,20 +107,7 @@ li{
     overflow: hidden;
 }
 
-/*.header-absolute{
-    position: absolute;
-    width: 1179px;
-    bottom: 35px;
-    height: 250px;
-    
-    
-}*/
-/*.header-text-form{
-    display: flex;
-    flex-direction: row;
-    
-   
-}*/
+
 .port-grid{
     display: flex;
     flex-direction: row;
@@ -144,15 +117,14 @@ li{
     
 }
 .port-text{
-     
    display: flex;
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
    position: absolute;
-   top: 50%;
+   top: 30rem;
    right: 50%;
-   left: 45px;px;
+   left: 1rem;
 }
     .port-text h3{
         color: white;
@@ -164,10 +136,8 @@ li{
     .text-responsive{
         display: none;
     }
-    .text-header-index{
-        position: relative;
-    }
-.port-form{    
+
+/*.port-form{    
     display: flex;
     align-items: flex-end;
     width: 100%;
@@ -181,12 +151,12 @@ li{
 }
     .form_grupo{
         height: auto;
-    }
+    }*/
     .btn-form{
         background-color: rgba(250, 251, 249, 0.223);
         border:rgb(133, 168, 116) solid 1px; 
         color: rgb(255, 255, 255);
-        padding: 15px;
+        padding: 1rem;
         text-align: center;
         text-decoration: none;
         border-radius: 5px;
@@ -196,13 +166,13 @@ li{
 
 /*Estilos "Sección artículos"*/
 
-.section-1{
-    display: grid;
-    grid-column: 1/13;
+/*.container-section{
+    display: flex;
+    align-content: space-around;    
     max-width: 100%;
       
    
-}
+}*/
 
 .card1{
     grid-column: 1/5;
@@ -239,7 +209,7 @@ li{
         .btn{            
                 background-color: rgb(133, 168, 116); 
                 color: rgb(255, 255, 255);
-                padding: 15px 32px;
+                padding: 1rem 2rem;
                 margin: 5px 0px 10px;
                 text-align: center;
                 text-decoration: none;
@@ -303,7 +273,7 @@ flex*/
     }
 
     .footer-logo{
-        width: 80px;
+        width: 5rem;
     }
     .footer-text{
         color: antiquewhite;
@@ -421,28 +391,79 @@ p{
 
 
 
+/*-------- Dispositivo Smart-Phone-------------*/
+/*  Index */
 
+@media all and (max-width: 480px){
+    .container{
+        display:inline-block ;
+        margin: 0 auto;
+        max-width: 480px;    
+        
+    }
+    /* Header */
+    /* Navbar y Menú */
+    /*pureba menpu hambur*/
+    .navbar{
+        display: flex;
+        justify-content: center;
 
-/*<!--relax y spa, gimnasio, gastronomia, -->
-    <div class="row">
-        <div>
-            <img src="../img/spa/Spa2.jpg">
-            <img src="../img/gastronomía/spa-maqueta.png">
-            <h2>Relax y Spa</h2>
-        </div>
-        <div>
-            <img src="../img/gym/Gym3.jpg">
-            <img src="../img/gastronomía/gym-maqueta.png">
-            <h2>Gimnasio</h2>
-        </div>
-        <div>
-            <img src="../img/gastronomía/gastronomia-maqueta.png">
-            <img src="../img/gastronomía/Gastronomia2.jpg">
-            <h2>Gastronomía</h2>
-        </div>
-    </div>*/
+    }
+    
+   
+    
+    /* Video */
+    
+    .header-contenido{
+        display: grid;
+        grid-template-columns: 30rem;
+        align-content: center;
+        
+    }
+    .container-video-flex {
+        display: flex;
+        justify-content: center ;
+        align-items: center;
+        margin-bottom: 25px;
+     }
+         .video{
+             max-width: 100%;
+         }
+    
+         .text-header-index{
+            display: none;
+           
+         }
 
-
+        .port-text{
+            top: 20%;
+            left: 3rem;
+        }
+    
+        .text-responsive{
+            position: relative;
+            left: 0px;
+            bottom: -300rem;
+        }
+    
+    /*  Main */
+        .section-1{      
+            display: grid;   
+            max-width: 100%;               
+            grid-column: 1/13;        
+        }
+        iframe{
+            width: 30rem;
+        }  
+    
+    /*Footer */
+     
+    .footer-flex {    
+        margin-right: 5px;
+        margin-left: 20px;
+    
+    }
+    }
 
 
 

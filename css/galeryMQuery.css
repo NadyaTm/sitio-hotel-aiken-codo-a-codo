@@ -1,0 +1,18 @@
+@media (max-width: 480px){
+    .container{
+        display:inline-block ;
+        margin: 0 auto;
+        max-width: 480px; 
+        overflow: visible;
+        row-gap:  1em;
+        column-gap: 1em;
+        padding-left: 15px;
+        padding-right: 15px;      
+        
+    }
+
+   /* .navbar ul{
+        display: inline;
+    }*/
+}
+

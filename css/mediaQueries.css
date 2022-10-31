@@ -1,123 +1,26 @@
-/*-------- Dispositivo Smart-Phone-------------*/
-/*  Index */
-
-@media only screen and (max-width: 600px){
-.container{
-    margin: 0 auto;
-    max-width: 600px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    overflow: visible;
-    row-gap:  1em;
-    column-gap: 1em;
-    height: auto;
-    position: relative;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-/* Header */
-/* Navbar y Menú */
-.menu-responsive{
-    display: none;
-}
-.text-responsive{
-    display: none;
-}
-
-/* Video */
-
-.header-contenido{
-    display: grid;
-    grid-template-columns: 600px;
-    align-content: center;
-    
-}
-.container-video-flex {
-    display: flex;
-    justify-content: center ;
-    align-items: center;
-    margin-bottom: 25px;
- }
-     .video{
-         width: 50%;
-     }
-
-     .text-header-index{
-        display: none;
-       
-     }
-
-     .menu-responsive{
-        display: none;
-    }
-    .text-responsive{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        position: absolute;
-        left: 0px;
-        bottom: -4750px;
-    }
-/*  Main */
-
-
-
-/*Footer */
- 
-.footer-flex {    
-    margin-right: 5px;
-    margin-left: 20px;
-
-}
-}
-
-/* Habitaciones  */
-
-/* Header */
-/* Navbar y Menú */
-/* Video */
-/*  Main */
-/*section 1*/
-/*section 2*/
-/*Footer */
-
-/* Galería */
-
-/* Header */
-/* Navbar y Menú */
-/* Video */
-/*  Main */
-/*section 1*/
-/*section 2*/
-/*Footer */
-
-/*  Check in  */
-
-/* Header */
-/* Navbar y Menú */
-/* Video */
-/*  Main */
-/*section 1*/
-/*section 2*/
-/*Footer */
-
-/* Contacto  */
-/* Header */
-/* Navbar y Menú */
-/* Video */
-/*  Main */
-/*section 1*/
-/*section 2*/
-/*Footer */
-
 
 /*-------- Dispositivos Tableta-------------*/
+@media (max-width: 750px){
+    .container{
+        display:inline-block ;
+        margin: 0 auto;
+        max-width: 750px; 
+        overflow: visible;
+        row-gap:  1em;
+        column-gap: 1em;
+        padding-left: 15px;
+        padding-right: 15px;      
+        
+    }
 
-@media only screen and (max-width: 480px){
+    .port-text {
+        top: 30%;
+        left: 1rem;
+    }
 
 
 }
+
 /*  Index */
 
 /* Habitaciones  */
@@ -129,16 +32,3 @@
 /* Contacto  */
 /*-------- Dispositivos móviles-------------*/
 
-@media only screen and (max-width: 480px){
-
-
-}
-/*  Index */
-
-/* Habitaciones  */
-
-/* Galería */
-
-/*  Check in  */
-
-/* Contacto  */
